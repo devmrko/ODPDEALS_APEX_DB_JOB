@@ -11,9 +11,9 @@ IS
 BEGIN
     v_sql := '
     SELECT
-        LISTAGG(''''''''
+        LISTAGG(''"''
                 || COLUMN_NAME
-                || '''''''', '','')
+                || ''"'', '','')
     FROM
         ALL_TAB_COLUMNS
     WHERE
@@ -33,9 +33,9 @@ END;
 ```
 -- test query
     SELECT
-        LISTAGG(''''''''
+        LISTAGG('"'
                 || COLUMN_NAME
-                || '''''''', '','')
+                || '"', ',')
     FROM
         ALL_TAB_COLUMNS
     WHERE
