@@ -45,7 +45,7 @@ END;
 EXEC wksp_odpdeals.p_consumption_date('DM12_EXIST10');
 ```
 
-# - insert consumption data by date
+# - Insert consumption data by date
 
 - procedure 
 ```
